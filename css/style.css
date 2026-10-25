@@ -1,1 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Arial, sans-serif;
+    color: #173E43;
+    background-color: #FFFFFF;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Header */
+.site-header {
+    background-color: #42C8C5;
+    padding: 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 28px;
+    color: #173E43;
+}
+
+.site-header nav {
+    display: flex;
+    gap: 35px;
+}
+
+.site-header nav a {
+    color: #173E43;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero section */
+.hero-grid {
+    background-color: #FFDE73;
+    padding: 70px 80px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text h2 {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    color: #173E43;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.button {
+    display: inline-block;
+    background-color: #F28DB2;
+    color: #173E43;
+    padding: 16px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #EA75A0;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+/* Animal cards */
+.cards-gallery {
+    padding: 60px 80px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.gallery-title {
+    grid-column: 1 / -1;
+    font-size: 36px;
+    color: #173E43;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card:nth-of-type(1) {
+    background-color: #C8F2E2;
+}
+
+.card:nth-of-type(2) {
+    background-color: #F8B8D0;
+}
+
+.card:nth-of-type(3) {
+    background-color: #B9E6F5;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+/* Footer */
+.site-footer {
+    background-color: #42C8C5;
+    padding: 30px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.site-footer p,
+.social-links a,
+.social-links span {
+    color: #173E43;
+    font-size: 14px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+/* Mobile layout */
+@media (max-width: 767px) {
+
+    .site-header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .site-header nav {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        padding: 40px 25px;
+        gap: 30px;
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .hero-image img {
+        max-height: 300px;
+        object-fit: cover;
+    }
+
+    .cards-gallery {
+        grid-template-columns: 1fr;
+        padding: 40px 25px;
+        gap: 25px;
+    }
+
+    .gallery-title {
+        font-size: 30px;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .site-footer {
+        padding: 25px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
