@@ -86,7 +86,7 @@ img {
 .cards-gallery {
     padding: 60px 80px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);    
     gap: 30px;
     max-width: 1440px;
     margin: 0 auto;
